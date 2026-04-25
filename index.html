@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Krishna Dhawangale — Portfolio</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&family=JetBrains+Mono:wght@500;600&display=swap"
+    rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- LOADING / PROGRESS UI -->
+  <div id="scroll-progress"></div>
+  <div id="cursor-dot"></div>
+  <div id="cursor-ring"></div>
+
+  <!-- NAVIGATION -->
+  <nav id="navbar">
+    <a href="#" class="nav-logo">KD.</a>
+
+    <ul class="nav-links">
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Work</a></li>
+      <li><a href="#certificates">Achievements</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li class="mobile-only"><a
+          href="https://drive.google.com/file/d/1e-y2IwLHYOIVt4AcofAkzU8sqT-Bb9WG/view?usp=drivesdk" target="_blank"
+          class="btn btn-primary">Resume <i class="fas fa-download"></i></a></li>
+    </ul>
+
+    <div class="menu-toggle" id="mobile-menu">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </div>
+
+    <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark/light mode" style="margin-right: 1rem;">
+      <i class="fas fa-moon"></i>
+    </button>
+
+    <a href="https://drive.google.com/file/d/1e-y2IwLHYOIVt4AcofAkzU8sqT-Bb9WG/view?usp=drivesdk" target="_blank"
+      class="btn btn-primary nav-resume-btn" style="padding: 0.6rem 1.4rem; font-size: 0.85rem;">Resume <i
+        class="fas fa-download"></i></a>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-left">
+      <div class="hero-img-wrap">
+        <img
+          src="https://krishna-dhawangale.github.io/Krishna-Dhawangale-Portfolio.github.io/assets/images/krishna-img-1181x1280.jpg"
+          alt="Krishna Dhawangale" />
+      </div>
+    </div>
+    <div class="hero-right">
+      <div class="available-badge">
+        <span></span> Available for Opportunities
+      </div>
+      <div class="hero-text-content">
+        <span class="hero-name-intro">Hi, I'm</span>
+        <h1 class="hero-main-name">
+          <span class="text-gradient">Krishna</span> <br>Dhawangale
+        </h1>
+        <div class="hero-typewriter" id="typewriter"></div>
+        <p class="hero-bio">
+          Passionate CS student at SBJITMR, Nagpur — building at the intersection of data science, data analytics and
+          web development.
+        </p>
+        <div class="hero-cta">
+          <a href="#projects" class="btn btn-primary">View My Work <i class="fas fa-arrow-right"></i></a>
+          <a href="https://drive.google.com/file/d/1e-y2IwLHYOIVt4AcofAkzU8sqT-Bb9WG/view?usp=drivesdk" target="_blank"
+            class="btn btn-outline">Download Resume <i class="fas fa-arrow-down"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="container">
+      <span class="section-label reveal-heading">01 — About Me</span>
+      <div class="about-grid">
+        <div class="about-text reveal delay-1">
+          <h2 class="section-title">Turning data into<br><span class="text-gradient">meaningful solutions</span></h2>
+          <p>I am a <strong>Computer Science student</strong> at S. B. Jain Institute of Technology Management and
+            Research, Nagpur. My curiosity drives me to explore how technology can solve real-world problems.</p>
+          <p>I am passionate about <strong>Data Science, Data Analytics and Web Technologies</strong>. Through academic
+            learning and self-practice, I continuously work on improving my technical and logical skills.</p>
+
+          <div class="about-tiles reveal delay-2">
+            <div class="tile">
+              <div class="mono" style="color:var(--accent-cyan)">DS</div>
+              <div style="font-size: 0.7rem; color: var(--text-muted)">Data Science</div>
+            </div>
+            <div class="tile">
+              <div class="mono" style="color:#00ff88">DA</div>
+              <div style="font-size: 0.7rem; color: var(--text-muted)">Analytics</div>
+            </div>
+            <div class="tile">
+              <div class="mono" style="color:var(--accent-violet)">WD</div>
+              <div style="font-size: 0.7rem; color: var(--text-muted)">Web Dev</div>
+            </div>
+          </div>
+        </div>
+        <div class="about-card-wrap reveal delay-2">
+          <div class="edu-card">
+            <div class="mono" style="color:var(--accent-cyan); margin-bottom: 0.5rem;">EDUCATION</div>
+            <h3 class="edu-title">Bachelor of Engineering</h3>
+            <div class="edu-meta">Computer Science & Engineering</div>
+            <p style="font-size: 0.9rem; color: var(--text-secondary)">SBJITMR, Nagpur. Developing strong foundations in
+              algorithms, data structures, machine learning, data analytics and web development.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <div class="container">
+      <span class="section-label reveal-heading">02 — Skills</span>
+      <h2 class="section-title reveal-heading">My Technical <span class="text-gradient">Ecosystem</span></h2>
+
+      <div class="skills-grid">
+        <!-- DS -->
+        <div class="skill-card ds reveal delay-1">
+          <div class="skill-icon"><i class="fas fa-brain"></i></div>
+          <h3 class="skill-name">Data Science</h3>
+          <div class="skill-tags">
+            <span class="tag">Python</span>
+            <span class="tag">Statistics</span>
+            <span class="tag">Machine Learning</span>
+            <span class="tag">Scikit-learn</span>
+          </div>
+          <div class="skill-visual-bar"></div>
+        </div>
+
+        <!-- DA -->
+        <div class="skill-card da reveal delay-2">
+          <div class="skill-icon"><i class="fas fa-chart-line"></i></div>
+          <h3 class="skill-name">Data Analytics</h3>
+          <div class="skill-tags">
+            <span class="tag">Power BI</span>
+            <span class="tag">Excel</span>
+            <span class="tag">SQL</span>
+            <span class="tag">Pandas</span>
+          </div>
+          <div class="skill-visual-bar"></div>
+        </div>
+
+        <!-- Web -->
+        <div class="skill-card web reveal delay-3">
+          <div class="skill-icon"><i class="fas fa-code"></i></div>
+          <h3 class="skill-name">Web Development</h3>
+          <div class="skill-tags">
+            <span class="tag">HTML5</span>
+            <span class="tag">CSS3</span>
+            <span class="tag">JS (ES6+)</span>
+          </div>
+          <div class="skill-visual-bar"></div>
+        </div>
+
+        <!-- SW -->
+        <div class="skill-card sw reveal delay-4">
+          <div class="skill-icon"><i class="fas fa-layer-group"></i></div>
+          <h3 class="skill-name">Software Development</h3>
+          <div class="skill-tags">
+            <span class="tag">Java</span>
+            <span class="tag">DSA</span>
+            <span class="tag">OOP</span>
+          </div>
+          <div class="skill-visual-bar"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <div class="container">
+      <span class="section-label reveal-heading">03 — Projects</span>
+      <h2 class="section-title reveal-heading">Featured <span class="text-gradient">Work</span></h2>
+      <div class="projects-grid">
+        <!-- Proj 1 -->
+        <div class="project-card reveal delay-1">
+          <a href="https://weather-pjsnb5u36-krishna-dhawangales-projects.vercel.app/" target="_blank"
+            class="project-link">
+            <div class="project-img proj-1" style="background-image: url('images/weather_real.png')">
+              <div class="project-overlay">
+                <span class="overlay-text">View Project <i class="fas fa-arrow-right"></i></span>
+              </div>
+            </div>
+          </a>
+          <div class="project-body">
+            <div class="project-num">PROJECT // 01</div>
+            <h3 class="project-title">Weather Forecast App</h3>
+            <p class="project-desc">Real-time weather data visualization worldwide using OpenWeather API and modern UI.
+            </p>
+            <div class="skill-tags">
+              <span class="tag">JS</span>
+              <span class="tag">API</span>
+              <span class="tag">CSS3</span>
+            </div>
+            <div class="project-links">
+              <a href="https://weather-pjsnb5u36-krishna-dhawangales-projects.vercel.app/" target="_blank"
+                class="btn-project demo"><i class="fas fa-rocket"></i> Demo</a>
+              <a href="https://github.com/Krishna-Dhawangale/Weather-App" target="_blank" class="btn-project github"><i
+                  class="fab fa-github"></i> GitHub</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Proj 2 -->
+        <div class="project-card reveal delay-2">
+          <a href="https://online-voting-portal-pr7a.vercel.app/" target="_blank" class="project-link">
+            <div class="project-img proj-2" style="background-image: url('images/voting_final.png')">
+              <div class="project-overlay">
+                <span class="overlay-text">View Project <i class="fas fa-arrow-right"></i></span>
+              </div>
+            </div>
+          </a>
+          <div class="project-body">
+            <div class="project-num">PROJECT // 02</div>
+            <h3 class="project-title">Online Voting System</h3>
+            <p class="project-desc">A secure blockchain-inspired voting platform ensuring data integrity and user
+              privacy.</p>
+            <div class="skill-tags">
+              <span class="tag">Java</span>
+              <span class="tag">SQL</span>
+              <span class="tag">Auth</span>
+            </div>
+            <div class="project-links">
+              <a href="https://online-voting-portal-pr7a.vercel.app/" target="_blank" class="btn-project demo"><i
+                  class="fas fa-rocket"></i> Demo</a>
+              <a href="https://github.com/Krishna-Dhawangale/online-voting-portal" target="_blank"
+                class="btn-project github"><i class="fab fa-github"></i> GitHub</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Proj 3 -->
+        <div class="project-card reveal delay-1">
+          <a href="https://heart-disease-prediction-mocha.vercel.app/" target="_blank" class="project-link">
+            <div class="project-img proj-3" style="background-image: url('images/heart_final.png')">
+              <div class="project-overlay">
+                <span class="overlay-text">View Project <i class="fas fa-arrow-right"></i></span>
+              </div>
+            </div>
+          </a>
+          <div class="project-body">
+            <div class="project-num">PROJECT // 03</div>
+            <h3 class="project-title">Heart Disease Prediction</h3>
+            <p class="project-desc">ML classifier predicting heart conditions based on patient biometric healthcare
+              data.</p>
+            <div class="skill-tags">
+              <span class="tag">Python</span>
+              <span class="tag">ML</span>
+              <span class="tag">Flask</span>
+            </div>
+            <div class="project-links">
+              <a href="https://heart-disease-prediction-mocha.vercel.app/" target="_blank" class="btn-project demo"><i
+                  class="fas fa-rocket"></i> Demo</a>
+              <a href="https://github.com/Krishna-Dhawangale/Heart-Disease-Prediction" target="_blank"
+                class="btn-project github"><i class="fab fa-github"></i> GitHub</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Proj 4 -->
+        <div class="project-card reveal delay-2">
+          <a href="https://event-recommendation-system.vercel.app/" target="_blank" class="project-link">
+            <div class="project-img proj-4" style="background-image: url('images/event_final.png')">
+              <div class="project-overlay">
+                <span class="overlay-text">View Project <i class="fas fa-arrow-right"></i></span>
+              </div>
+            </div>
+          </a>
+          <div class="project-body">
+            <div class="project-num">PROJECT // 04</div>
+            <h3 class="project-title">Event Recommender System</h3>
+            <p class="project-desc">Personalized AI engine suggesting events by analyzing user behavioral patterns.</p>
+            <div class="skill-tags">
+              <span class="tag">AI</span>
+              <span class="tag">RecSys</span>
+              <span class="tag">Python</span>
+            </div>
+            <div class="project-links">
+              <a href="https://event-recommendation-system.vercel.app/" target="_blank" class="btn-project demo"><i
+                  class="fas fa-rocket"></i> Demo</a>
+              <a href="https://github.com/Krishna-Dhawangale/Event-Recommendation-System" target="_blank"
+                class="btn-project github"><i class="fab fa-github"></i> GitHub</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Proj 5 -->
+        <div class="project-card reveal delay-3">
+          <a href="https://github.com/Krishna-Dhawangale/Customer-Churn-Prediction" target="_blank"
+            class="project-link">
+            <div class="project-img proj-5" style="background-image: url('images/churn_real.png')">
+              <div class="project-overlay">
+                <span class="overlay-text">View Project <i class="fas fa-arrow-right"></i></span>
+              </div>
+            </div>
+          </a>
+          <div class="project-body">
+            <div class="project-num">PROJECT // 05</div>
+            <h3 class="project-title">Customer Churn Prediction</h3>
+            <p class="project-desc">A predictive machine learning model to identify telecommunication customers likely
+              to churn based on demographics and usage data.</p>
+            <div class="skill-tags">
+              <span class="tag">Python</span>
+              <span class="tag">Pandas</span>
+              <span class="tag">Scikit-learn</span>
+              <span class="tag">EDA</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/Krishna-Dhawangale/Customer-Churn-Prediction" target="_blank"
+                class="btn-project github"><i class="fab fa-github"></i> GitHub</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CERTIFICATES -->
+  <section id="certificates">
+    <div class="container">
+      <span class="section-label reveal-heading">04 — Achievements</span>
+      <h2 class="section-title reveal-heading">Verified <span class="text-gradient">Credentials</span></h2>
+
+      <div class="certs-grid">
+        <div class="cert-card reveal delay-1">
+          <div class="cert-left">
+            <i class="fas fa-certificate cert-icon"></i>
+            <div>
+              <div class="cert-issuer">NPTEL — IIT Madras</div>
+              <h3 class="cert-title">Data Science for Engineers</h3>
+              <span class="cert-date">Elite Certification — 2024</span>
+            </div>
+          </div>
+          <a href="https://drive.google.com/file/d/1QaNcfoNdehAW9plIlJ01fds5akTsLhl0/view?usp=drivesdk" target="_blank"
+            class="view-cert">View <i class="fas fa-external-link-alt"></i></a>
+        </div>
+        <div class="cert-card reveal delay-2">
+          <div class="cert-left">
+            <i class="fas fa-chart-pie cert-icon"></i>
+            <div>
+              <div class="cert-issuer">Deloitte Australia / Forage</div>
+              <h3 class="cert-title">Data Analytics Virtual Experience</h3>
+              <span class="cert-date">Issued: Dec 2025</span>
+            </div>
+          </div>
+          <a href="images/Delloite.png" target="_blank" class="view-cert">View <i
+              class="fas fa-external-link-alt"></i></a>
+        </div>
+
+        <div class="cert-card reveal delay-3">
+          <div class="cert-left">
+            <i class="fas fa-chart-bar cert-icon"></i>
+            <div>
+              <div class="cert-issuer">Tata Group / Forage</div>
+              <h3 class="cert-title">Data Visualization Virtual Experience</h3>
+              <span class="cert-date">Issued: Jan 2025</span>
+            </div>
+          </div>
+          <a href="images/TATA_Data_Visualization.png" target="_blank" class="view-cert">View <i
+              class="fas fa-external-link-alt"></i></a>
+        </div>
+
+        <div class="cert-card reveal delay-4">
+          <div class="cert-left">
+            <i class="fab fa-figma cert-icon"></i>
+            <div>
+              <div class="cert-issuer">Figma Academy</div>
+              <h3 class="cert-title">UI/UX Design Essentials</h3>
+              <span class="cert-date">Issued: April 2024</span>
+            </div>
+          </div>
+          <a href="images/figma.png" target="_blank" class="view-cert">View <i class="fas fa-external-link-alt"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="container">
+      <span class="section-label reveal-heading">05 — Contact</span>
+      <h2 class="section-title reveal-heading">Let's build something <span class="text-gradient">legendary</span></h2>
+
+      <div class="contact-grid">
+        <div class="contact-info reveal delay-1">
+          <div class="contact-item">
+            <div class="icon-box"><i class="fas fa-envelope"></i></div>
+            <div>
+              <span class="contact-label">Email Address</span>
+              <div class="contact-value"><a href="mailto:krishnadhawangale066@gmail.com"
+                  style="color:inherit; text-decoration: none;">krishnadhawangale066@gmail.com</a></div>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="icon-box"><i class="fas fa-phone"></i></div>
+            <div>
+              <span class="contact-label">Phone Support</span>
+              <div class="contact-value"><a href="tel:+919172889839" style="color:inherit; text-decoration: none;">+91
+                  9172889839</a></div>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="icon-box"><i class="fab fa-linkedin-in"></i></div>
+            <div>
+              <span class="contact-label">Professional Network</span>
+              <div class="contact-value"><a href="https://linkedin.com/in/krishna-dhawangale" target="_blank"
+                  style="color:inherit; text-decoration: none;">LinkedIn Profile</a></div>
+            </div>
+          </div>
+
+          <div class="shimmer-banner reveal delay-3">
+            🚀 OPEN FOR INTERNSHIPS: Data Science & Analytics
+          </div>
+        </div>
+
+        <div class="contact-form reveal delay-2">
+          <form action="https://formsubmit.co/ajax/krishnadhawangale066@gmail.com" method="POST" id="contactForm">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_template" value="table">
+            <input type="hidden" name="_subject" value="New message from Portfolio">
+
+            <div class="form-group">
+              <input type="text" name="name" class="form-input" placeholder="Your Name" required>
+            </div>
+            <div class="form-group">
+              <input type="email" name="email" class="form-input" placeholder="Your Email" required>
+            </div>
+            <div class="form-group">
+              <textarea name="message" class="form-textarea" rows="5" placeholder="Write your message..."
+                required></textarea>
+            </div>
+            <div id="formResponse"
+              style="display:none; margin-bottom: 1rem; padding: 1rem; border-radius: 10px; font-size: 0.85rem; text-align: center;">
+            </div>
+            <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center;">Send Message <i
+                class="fas fa-paper-plane"></i></button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="nav-logo">Follow me on</div>
+    <div class="footer-socials">
+      <a href="https://github.com/krishna-dhawangale" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://linkedin.com/in/krishna-dhawangale" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+      <a href="mailto:krishnadhawangale066@gmail.com"><i class="fas fa-envelope"></i></a>
+    </div>
+    <p class="footer-copy">© 2026 Krishna Dhawangale. Engineered for Excellence.</p>
+  </footer>
+
+  <div id="back-to-top"><i class="fas fa-arrow-up"></i></div>
+
+  <!-- GSAP for advanced animations -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
